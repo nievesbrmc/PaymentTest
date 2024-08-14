@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/API_PaymentTest/bin/Debug/net5.0
+/API_PaymentTest/obj
+/API_PaymentTest_Test/bin
+/API_PaymentTest_Test/obj
+/Business/bin/Debug/net5.0
+/Business/obj
+/Data/bin/Debug/net5.0
+/Data/obj
+/DbContext/bin/Debug/net5.0
+/DbContext/obj
+/Entity/bin/Debug/net5.0
+/Entity/obj
