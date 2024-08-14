@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "e90b0c35-e27b-4268-925c-f1f00debbafd",
+		"name": "PaymentTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37691054"
+	},
+	"item": [
+		{
+			"name": "GetItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44350/api/PaymentsLogs?Id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44350",
+					"path": [
+						"api",
+						"PaymentsLogs"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"paymentId\": 2,\r\n  \"paymentConcept\": \"DEPOSITO MERCADO\",\r\n  \"prouctQuantity\": 10,\r\n  \"pymentfrom\": \"RICARDO NIEVES\",\r\n  \"paymentTo\": \"ELIZABETH\",\r\n  \"amount\": 5000,\r\n  \"paymentStatusId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44350/api/PaymentsLogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44350",
+					"path": [
+						"api",
+						"PaymentsLogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"paymentId\": 2,\r\n  \"paymentConcept\": \"DEPOSITO MERCADO\",\r\n  \"prouctQuantity\": 10,\r\n  \"pymentfrom\": \"RICARDO NIEVES\",\r\n  \"paymentTo\": \"ELIZABETH\",\r\n  \"amount\": 5000,\r\n  \"paymentStatusId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44350/api/PaymentsLogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44350",
+					"path": [
+						"api",
+						"PaymentsLogs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
